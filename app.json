@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "FYP_Project",
-    "slug": "FYP_Project",
+    "slug": "calvin",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,10 +21,27 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "37e10b85-d8ca-4286-a160-c466c6858cdf"
+      }
+    },
+    "owner": "calvinchuakaipin"
   }
 }
